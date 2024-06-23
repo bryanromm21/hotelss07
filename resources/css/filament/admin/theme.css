@@ -1,0 +1,136 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+/** main color: #070D40 */
+
+/** tailwind.config.js 
+theme: {
+    fontSize: {
+        'xs': '0.75rem',
+        'sm': '1rem',
+        'base': '1.1rem',
+        'md': '1.2rem',
+        'xl': '1.3rem',
+        '2xl': '1.5rem',
+        '3xl': '1.9rem',
+        '4xl': '2.4rem',
+        '5xl': '3.0rem',
+    }
+}
+*/
+
+/* Definir la variable CSS personalizada para el color principal */
+:root {
+    --custom-primary: rgb(7, 13, 64); /* Define tu color personalizado aquí */
+  }
+  /**navbar menu*/
+  .fi-topbar .bg-white {
+  
+      @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];
+  }
+  /** azul marino#070d40
+  @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];
+  */
+  /** header/logo/menu */
+  .fi-sidebar-header {
+  
+      @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];
+    }
+    .fi-sidebar-header {
+      
+      @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];
+    }
+    /**para kas celdas de las tablas
+    table td {
+      background-color: #ee8;
+  }
+  cuerpo
+  body {
+      background-color: gray !important;
+  }
+  borde tabla
+  table {
+      @apply border-2 border-blue-500;
+  }*/
+  /**slide bar menu*/
+  .fi-sidebar {
+      
+      @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];; /* Original */
+    }
+    
+    .fi-sidebar {
+  
+      @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];
+    }
+    
+  
+  .fi-sidebar-group div span {
+      @apply text-white;
+  }
+  
+  .fi-sidebar-group .fi-icon-btn {
+      @apply text-sky-300;
+  }
+  
+  .fi-sidebar-group .fi-icon-btn:hover {
+      @apply text-white;
+  }
+  
+  .fi-sidebar-item-icon {
+      @apply text-sky-300
+  }
+  
+  .fi-sidebar-item a {
+      @apply text-white;
+  }
+  
+  .fi-sidebar-item-label {
+      @apply text-white;
+  }
+  
+  .fi-sidebar-item a:hover {
+      @apply text-primary-50 bg-primary-700;
+  }
+  
+  .fi-sidebar-item-active a {
+      @apply  bg-primary-700 bg-opacity-60;
+  }
+  
+  .fi-sidebar-item-active .fi-sidebar-item-label {
+      @apply  font-extrabold;
+  }
+  
+  .fi-sidebar-item-active .fi-sidebar-item-icon {
+      @apply text-primary-400;
+  }
+  
+  /** main content  quitar cuando se usa azul marino
+  .fi-main-ctn {
+      @apply bg-primary-50 bg-opacity-50 dark:bg-transparent;
+  }
+  */
+  /**cambiar el fondo de inicio de cesion
+  .fi-simple-layout {
+       @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];
+  }
+  cambiar el login de blanco azul marino
+  .fi-simple-main {
+       @apply bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 from-[var(--custom-primary)] to-[var(--custom-primary)] dark:bg-[var(--custom-primary)];
+  }
+  no funciona cambiar el color del texto del texto
+  .fi-simple-main {
+      @apply text-white;
+  }
+  
+  */
+  
+  /** badge */
+  .fi-badge{
+      @apply rounded-full;
+  }
+  
+  /** button */
+  .fi-btn {
+      @apply ring-transparent shadow-gray-400 dark:shadow-gray-950;
+  }
+  
